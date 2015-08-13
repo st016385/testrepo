@@ -5,9 +5,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
-/**
- * Created by jessie on 12.08.15.
- */
+
+
 @WebServlet("/s")
 public class MyServlet extends HttpServlet {
 
@@ -23,6 +22,6 @@ public class MyServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        out.println("Hello Word");
+        out.println("Hello, Word!");
     }
 }
